@@ -5,8 +5,8 @@
 <body>
 	<center>
 		<h2>게시글 쓰기</h2>
-
-		<form action="BoardWriteProc.jsp" method="post">
+		<!-- 컨트롤러가 읽어들이게끔 페이지 이동시킴 -->
+		<form action="BoardWriteProcCon.do" method="post">
 			<table width="600" border="1" bordercolor="gray" bgcolor="skyblue">
 				<!-- bordercolor는 선색깔 지정 -->
 				<tr height="40">
@@ -40,7 +40,7 @@
 					<td align="center" colspan="2"><input type="submit"
 						value="글쓰기"> &nbsp;&nbsp; <input type="reset" value="다시작성">
 						&nbsp;&nbsp;
-						<button onclick="location.href='BoardList.jsp'">전체 게시글 보기</button>
+						<button onclick="location.href='BoardListCon.do'">전체 게시글 보기</button>
 						<!-- 클릭하면 BoardList.jsp페이지로 넘어가는 버튼--></td>
 				</tr>
 			</table>
